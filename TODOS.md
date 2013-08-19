@@ -1,10 +1,10 @@
-# Basic Files
+## Basic Files
 1. Separate templates in files *.hbs
 2. Make example component
 3. Make example view
 4. Make example controller __(X)__
 
-# Api cordova components
+## Api cordova components
 1. Accelerometer component
 2. Camera component
 4. Capture component
@@ -20,8 +20,11 @@
 14. Splashscreen component
 15. Storage component
 
-# Devices styling
+## Devices styling
 1. Blackberry necessary js and css
 2. iOS 7 necessary js and css
 3. Android necessay js and css
 4. Windows Phone 8 necessary js and css
+
+ #### Note
+ __(X)__ its to done
