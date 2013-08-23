@@ -1,5 +1,7 @@
-// (function(){
-// 	App.Components.MyComponent = Ember.Component.extend({
-
-// 	});
-// })();
+(function(){
+	App.ExampleComponent = Ember.Component.extend({
+		init: function() {
+			console.log('im a Component');
+		}
+	});
+})();

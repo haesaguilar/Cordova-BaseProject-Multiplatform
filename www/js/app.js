@@ -2,9 +2,21 @@
 
 	// Create the app
 	global.App = Ember.Application.create({
+
 		ready: function() {
 			console.log('App is ready');
-		}
+			document.addEventListener('deviceready', this.onDeviceReady, false);
+
+		},
+
+		onDeviceReady: function() {
+	        console.log('Device is Ready');
+
+	        var view = App.ExampleView;
+			view.appendTo('body');
+
+			var comp = App.ExampleComponent;
+	    }
 	});
 
 	// Models Store
@@ -21,5 +33,4 @@
 
 		this.resource('test');
 	});
-
 })(window);

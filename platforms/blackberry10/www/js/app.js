@@ -1,11 +1,36 @@
 (function(global){
-	global.App = Ember.Application.create();
-	console.log('test');
 
-	$('body').html('a');
+	// Create the app
+	global.App = Ember.Application.create({
 
-	global.Controllers = App.Controllers = {};
-	global.Components = App.Components = {};
-	global.Models = App.Store = DS.Store || {};
-	global.Views = App.Views = {};
+		ready: function() {
+			console.log('App is ready');
+			document.addEventListener('deviceready', this.onDeviceReady, false);
+
+		},
+
+		onDeviceReady: function() {
+	        console.log('Device is Ready');
+
+	        var view = App.ExampleView;
+			view.appendTo('body');
+
+			var comp = App.ExampleComponent;
+	    }
+	});
+
+	// Models Store
+	App.Store = DS.Store.extend({
+		revision: 13,
+  		adapter: DS.FixtureAdapter.create()
+	});
+
+	// Router of the App
+	App.Router.map(function() {
+		this.resource('example', function() {
+			this.resource('moreexample', {path: ':example_id'});
+		});
+
+		this.resource('test');
+	});
 })(window);
