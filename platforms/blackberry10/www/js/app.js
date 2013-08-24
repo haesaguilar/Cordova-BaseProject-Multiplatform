@@ -11,11 +11,6 @@
 
 		onDeviceReady: function() {
 	        console.log('Device is Ready');
-
-	        var view = App.ExampleView;
-			view.appendTo('body');
-
-			var comp = App.ExampleComponent;
 	    }
 	});
 

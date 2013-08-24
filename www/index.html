@@ -14,6 +14,8 @@
             <b>{{#linkTo 'test'}}test{{/linkTo}}</b>
             <b>{{#linkTo 'example'}}example{{/linkTo}}</b>
             {{outlet}}
+            {{view App.ExampleView}}
+            {{App.Notifications}}
         </script>
 
         <script type="text/x-handlebars" id="test">
@@ -69,7 +71,6 @@
         <script type="text/javascript" src="js/routes/moreexample.js"></script>
 
         <!-- Components -->
-        <script type="text/javascript" src="js/components/example.js"></script>
 
     </body>
 </html>
