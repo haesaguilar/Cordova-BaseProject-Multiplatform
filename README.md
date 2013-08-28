@@ -1,4 +1,4 @@
-Cordova-Base-Ember-Multiplatform
+Cordova-BaseProject-Multiplatform
 ================================
 
 Cordova project with Ember and  it's multiplatform
