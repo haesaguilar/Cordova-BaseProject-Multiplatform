@@ -1,8 +1,10 @@
 ## Basic Files
-1. Separate templates in files *.hbs
+1. Separate templates in files *.hbs __(X)__
 2. Make example component
-3. Make example view
-4. Make example controller __(X)__
+3. Make example view __(X)__
+4. Make example controller
+5. Make example model __(X)__
+6. Make example collection __(X)__
 
 ## Api cordova components
 1. Accelerometer component
