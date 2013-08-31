@@ -28,7 +28,6 @@
 	 		this.menuView = new App.Views.MenuBottom({
 				collection : menuCollection
 			});
-			App.menu_bottom.show(this.menuView);
 		},
 
 		// Render View
@@ -36,6 +35,7 @@
 			this.test.append($('<button/>').text('click'));
 			this.$el.append(this.test);
 			this.renderTemplate({items: this.collection.toJSON()})
+			App.menu_bottom.show(this.menuView);
 		},
 
 		// Event Methods
