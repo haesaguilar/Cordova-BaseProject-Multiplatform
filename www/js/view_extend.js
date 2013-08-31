@@ -12,7 +12,7 @@
 			this.templateExtension = this.options.templateExtension || this.templateExtension;
 			this.templateFolder = this.options.templateFolder || this.templateFolder;
 			this.templatePrintType = this.options.templatePrintType || this.templatePrintType;
-			console.log(this.options);
+
 			$.get(this.templateFolder + this.template + this.templateExtension, function(template){
 				var templateCompiled = Handlebars.compile(template);
 				self.$el[self.templatePrintType](templateCompiled(options));

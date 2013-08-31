@@ -4,6 +4,7 @@
 		template: 'menu_bottom',
 
 		classes: {
+			tab : 'menu-bottom-tab',
 			normal : 'menu-bottom-tab-normal',
 			back : 'menu-bottom-tab-back',
 			asideLeft : 'menu-bottom-tab-asideLeft',
@@ -16,7 +17,7 @@
 		},
 
 		events: {
-			'click button' : 'onClickButton'
+			'click .menu-bottom-tab' : 'onClickTab'
 		},
 
 		// Initialize View
@@ -30,8 +31,27 @@
 		},
 
 		// Event Methods
-		onClickButton: function() {
-			alert('click');
+		onClickTab: function(e) {
+			var currentId = parseInt($(e.currentTarget).data('id'));
+
+			_.each(this.collection, function(value, key, list){
+				var attrs = this.collection.get(key).attributes;
+				if(attrs.id == currentId){
+					attrs.state = 'current';
+				}else{
+					attrs.state = 'enabled';
+				}
+			}, this);
+
+			this.render();
+		},
+
+		onClickasideLeft: function() {
+			// TODO Toggle aside izquierdo
+		},
+
+		onClickasideRight: function() {
+			// TODO Toggle aside derecho
 		}
 
 
