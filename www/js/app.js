@@ -1,19 +1,5 @@
 (function(global){
 
-	// Create the app
-	// global.App = new Backbone.Marionette.Application.create({
-
-	// 	ready: function() {
-	// 		console.log('App is ready');
-	// 		document.addEventListener('deviceready', this.onDeviceReady, false);
-
-	// 	},
-
-	// 	onDeviceReady: function() {
-	//         console.log('Device is Ready');
-	//     }
-	// });
-
 	// Create the App
 	global.App = new Backbone.Marionette.Application();
 	App.Routers = App.Routers || {};
@@ -22,11 +8,16 @@
 	App.Collections = App.Collections || {};
 	App.Models = App.Models ||{};
 
+	// Cordova ready
+	// document.addEventListener('deviceready', onDeviceReady, false);
+
+	// onDeviceReady = function(){
 	window.onload = function(){
 
 	 	// Add necessary regions
 	 	App.addRegions({
-		  main: "#main"
+		  main: "#main",
+		  menu_bottom: "#menu_bottom"
 		});
 
 	 	// Add initializer

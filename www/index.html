@@ -4,11 +4,13 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
         <title>Hello World</title>
     </head>
     <body>
-        <div id="main">
+        <div id="app">
+            <div id="main"></div>
+            <div id="menu_bottom"></div>
         </div>
 
         <!-- Libraries -->
@@ -18,7 +20,6 @@
         <script type="text/javascript" src="js/libs/underscore-min.js"></script>
         <script type="text/javascript" src="js/libs/backbone-min.js"></script>
         <script type="text/javascript" src="js/libs/backbone.marionette.min.js"></script>
-        <!--<script type="text/javascript" src="js/libs/BlackBerry-JQM-all.min.js"></script>-->
 
         <!-- Basics -->
         <script type="text/javascript" src="js/view_extend.js"></script>
@@ -26,10 +27,11 @@
 
         <!-- Models -->
         <script type="text/javascript" src="js/models/item.js"></script>
+        <script type="text/javascript" src="js/models/tab.js"></script>
 
         <!-- Views -->
-
         <script type="text/javascript" src="js/views/main.js"></script>
+        <script type="text/javascript" src="js/views/menu_bottom.js"></script>
 
         <!-- Controllers -->
         <script type="text/javascript" src="js/controllers/main.js"></script>
@@ -41,6 +43,7 @@
 
         <!-- Collections -->
         <script type="text/javascript" src="js/collections/items.js"></script>
+        <script type="text/javascript" src="js/collections/menu_bottom.js"></script>
 
     </body>
 </html>

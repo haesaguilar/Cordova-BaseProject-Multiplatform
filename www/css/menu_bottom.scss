@@ -1,0 +1,33 @@
+/* Menu Bottom */
+
+#menu_bottom {
+	background: #2d2d2d;
+	color: #e3e3e3;
+	display: table;
+	height: 45px;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.menu-bottom-tab{
+	border-top: 3px solid #545454;
+	display: table-cell;
+	padding-top: 6px;
+	text-align: center;
+	width: 2%;
+
+	h6{
+		padding-top: 3px;
+		font-size: 0.7em;
+	}
+
+	&.current{
+		border-top: 3px solid #00d4ff;
+		background: #3a3a3a;
+	}
+}
+
+.menu-bottom-icon {
+	display: block;
+	font-size: 1.3em;
+}

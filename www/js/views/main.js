@@ -16,6 +16,19 @@
 		// Initialize View
 		initialize: function(){
 			this.test = $('<div/>').text('testing');
+
+			// Bottom Menu
+			var menuCollection = new App.Collections.MenuBottom([
+				new App.Models.Tab({ type: 'asideLeft', icon: 'reorder'}),
+	 			new App.Models.Tab({ text: 'Test', state: 'current', icon: 'check'}),
+	 			new App.Models.Tab({ text: 'Test2', icon: 'film'}),
+	 			new App.Models.Tab({ text: 'Test3', icon: 'eye-open'})
+	 		]);
+
+	 		this.menuView = new App.Views.MenuBottom({
+				collection : menuCollection
+			});
+			App.menu_bottom.show(this.menuView);
 		},
 
 		// Render View
