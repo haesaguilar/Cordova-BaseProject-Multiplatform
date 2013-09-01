@@ -27,8 +27,8 @@
 
 	 		// Sample Collection
 	 		var mainCollection = new App.Collections.Items([
-	 			new App.Models.Item({ id: 1, name: 'Quique'}),
-	 			new App.Models.Item({ id: 2, name: 'Jorge', email: 'my@dot.com'})
+	 			new App.Models.Item({ id: 1, name: 'Quique', email: 'quique@ckgrafico.com', twitter: 'CKGrafico'}),
+	 			new App.Models.Item({ id: 2, name: 'Jorge', email: 'jorge.casar@gmail.com', twitter: 'JorgeCasar'})
 	 		]);
 
 	 		// Sample View

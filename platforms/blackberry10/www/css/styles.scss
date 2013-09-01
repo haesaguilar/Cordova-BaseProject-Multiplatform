@@ -6,7 +6,6 @@ $c_background_highlight: #3a3a3a;
 $c_text: #e3e3e3;
 $c_highlight: #00d4ff;
 $c_highlight_disabled: #545454;
-$c_button: #F9F9F9;
 
 // Other variables
 $reference_height: 1280px;
@@ -24,7 +23,7 @@ $prefixes: webkit moz ms;
 	@import 'aside_right';
 	@import 'menu_bottom';
 	@import 'menu_top';
-	@import 'ui_components';
+	// @import 'ui_components';
 
 // Style
 
@@ -34,27 +33,11 @@ $prefixes: webkit moz ms;
 
 body, html {
 	background: $c_background;
-	color: $c_text;
-	font-family: "SlatePro",Slate,"Myriad Pro",Helvetica;
+	font-family: 'SlatePro';
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
 	overflow-y: hidden;
-  	@include PropPrefix(user-select, none)
-}
-
-h1 {
-	font-size: 1.5em;
-	margin-bottom: 0.4em;
-}
-
-h2 {
-	font-size: 1.3em;
-	margin-bottom: 0.2em;
-}
-
-h3 {
-	font-size: 1.1em;
 }
 
 #app {

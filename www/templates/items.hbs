@@ -1,7 +1,27 @@
+<h1>Welcome to example Page</h1>
+<h2>This project use: </h2>
+<ul>
+	<li>- Backbone</li>
+	<li>- Marionette</li>
+	<li>- jQuery</li>
+	<li>- Cordova</li>
+	<li>- Undersocre</li>
+	<li>- Handlebars</li>
+</ul>
+
+<h2>Credits to:</h2>
 {{#each items}}
-	name: {{name}}
+
+	{{#if name}}
+		<b>Name: </b> {{name}} -
+	{{/if}}
 
 	{{#if email}}
-		email: {{email}}
+		<b>Email: </b> {{email}} -
 	{{/if}}
+
+	{{#if twitter}}
+		<b>Twitter: </b> {{twitter}}
+	{{/if}}
+	<br>
 {{/each}}

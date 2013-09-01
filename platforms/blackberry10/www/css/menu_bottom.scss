@@ -1,0 +1,48 @@
+/* Menu Bottom */
+
+#menu_bottom {
+	background: $c_background;
+	color: $c_text;
+	display: table;
+	height: 10%;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.menu-bottom-tab {
+	border-top: 3px solid $c_highlight_disabled;
+	border-right: 1px solid darken($c_highlight_disabled, 50%);
+	display: table-cell;
+	height: 100%;
+	padding-top: 2%;
+	text-align: center;
+	width: 2%;
+
+	h6{
+		padding-top: 8%;
+		padding-bottom: 14%;
+		font-size: 0.7em;
+	}
+
+	&.current{
+		border-top: 3px solid $c_highlight;
+		background: $c_background_highlight;
+	}
+}
+
+.menu-bottom-icon {
+	display: block;
+	font-size: 1.5em;
+}
+
+.menu-bottom-tab-asideRight {
+	border-top: 0px;
+
+	&.current{
+		border-top: 0px;
+	}
+	&:active{
+		border-top: 3px solid $c_highlight;
+		background: $c_background_highlight;
+	}
+}
