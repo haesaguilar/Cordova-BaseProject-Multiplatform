@@ -1,7 +1,21 @@
+
+// Colors
+
+$c_background: #2d2d2d;
+$c_background_highlight: #3a3a3a;
+$c_text: #e3e3e3;
+$c_highlight: #00d4ff;
+$c_highlight_disabled: #545454;
+
+// Other variables
+$reference_height: 1280px;
+$reference_height: 768px;
+
 // Includes
 
 	@import 'reset';
 	@import 'font-awesome';
+	@import 'functions';
 
 	// Components
 	@import 'aside_left';
@@ -9,3 +23,26 @@
 	@import 'menu_bottom';
 	@import 'menu_top';
 	// @import 'ui_components';
+
+// Style
+
+@font-face {
+    @include Font('SlatePro','../fonts/SlatePro/','slatepro');
+}
+
+body, html {
+	background: $c_background;
+	font-family: 'SlatePro';
+	height: 100%;
+	width: 100%;
+}
+
+#app {
+	height: 100%;
+	width: 100%;
+}
+
+#main {
+	height: 90%;
+	width: 100%;
+}

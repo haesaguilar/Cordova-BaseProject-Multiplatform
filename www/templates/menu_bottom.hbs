@@ -1,3 +1,8 @@
 {{#each tabs}}
-	<li class="menu-bottom-tab menu-bottom-tab-{{type}} {{state}}" data-id="{{id}}"><span class="menu-bottom-icon icon-{{icon}}"></span> <h6>{{text}}</h6></li>
+	<li class="menu-bottom-tab menu-bottom-tab-{{type}} {{state}}" data-id="{{id}}">
+		<span class="menu-bottom-icon icon-{{icon}}"></span>
+		{{#if text}}
+			<h6>{{text}}</h6>
+		{{/if}}
+	</li>
 {{/each}}

@@ -6,8 +6,8 @@
         	id: 0,
             type: 'normal', // normal, asideLeft, asideRight, back
             state: 'enabled', // enabled, disabled, hide, current
-            icon: null,
-            text: null
+            icon: false,
+            text: false
         }
     });
 
