@@ -10,6 +10,7 @@ $c_highlight_disabled: #545454;
 // Other variables
 $reference_height: 1280px;
 $reference_height: 768px;
+$prefixes: webkit moz ms;
 
 // Includes
 
@@ -35,11 +36,15 @@ body, html {
 	font-family: 'SlatePro';
 	height: 100%;
 	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 #app {
 	height: 100%;
 	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 #main {
@@ -54,12 +59,15 @@ body, html {
 	right: -75%;
 	top: 0;
 	width: 75%;
+	@include PropPrefix(transition, all 0.5s);
 
 	&.show {
 		right: 0%;
+		@include PropPrefix(box-shadow,0px 0px 200px rgba(0, 0, 0, 0.75));
+		@include PropPrefix(transition, all 0.5s);
 
 		&::before{
-			background: rgba(0, 0, 0, 0.2);
+			background: transparent;
 			content: '';
 			height: 100%;
 			left: -50%;
