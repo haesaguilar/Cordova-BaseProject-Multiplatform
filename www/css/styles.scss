@@ -46,3 +46,26 @@ body, html {
 	height: 90%;
 	width: 100%;
 }
+
+#aside_right{
+	background: $c_background;
+	height: 100%;
+	position: absolute;
+	right: -75%;
+	top: 0;
+	width: 75%;
+
+	&.show {
+		right: 0%;
+
+		&::before{
+			background: rgba(0, 0, 0, 0.2);
+			content: '';
+			height: 100%;
+			left: -50%;
+			position: absolute;
+			top: 0;
+			width: 50%;
+		}
+	}
+}

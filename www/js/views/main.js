@@ -29,6 +29,9 @@
 	 		this.menuView = new App.Views.MenuBottom({
 				collection : menuCollection
 			});
+
+			// Aside Right
+			this.asideRightView = new App.Views.AsideRight();
 		},
 
 		// Render View

@@ -17,7 +17,8 @@
 		},
 
 		events: {
-			'click .menu-bottom-tab' : 'onClickTab'
+			'click .menu-bottom-tab' : 'onClickTab',
+			'click .menu-bottom-tab-asideRight' : 'onClickasideRight'
 		},
 
 		// Initialize View
@@ -53,7 +54,7 @@
 		},
 
 		onClickasideRight: function() {
-			// TODO Toggle aside derecho
+			App.Events.trigger('toggleAsideRight');
 		}
 
 

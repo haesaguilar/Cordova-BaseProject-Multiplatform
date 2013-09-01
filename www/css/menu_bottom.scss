@@ -41,4 +41,8 @@
 	&.current{
 		border-top: 0px;
 	}
+	&:active{
+		border-top: 3px solid $c_highlight;
+		background: $c_background_highlight;
+	}
 }

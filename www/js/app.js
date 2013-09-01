@@ -6,7 +6,9 @@
 	App.Views = App.Views || {};
 	App.Controllers = App.Controllers || {};
 	App.Collections = App.Collections || {};
-	App.Models = App.Models ||{};
+	App.Models = App.Models || {};
+	App.Events = App.Events || {};
+	_.extend(App.Events, Backbone.Events);
 
 	// Cordova ready
 	// document.addEventListener('deviceready', onDeviceReady, false);
