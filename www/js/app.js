@@ -2,7 +2,7 @@
 
 	// Create the App
 	global.App = new Backbone.Marionette.Application();
-	App.Routers = App.Routers || {};
+	App.Router = App.Router || {};
 	App.Views = App.Views || {};
 	App.Controllers = App.Controllers || {};
 	App.Collections = App.Collections || {};
@@ -25,20 +25,10 @@
 	 	// Add initializer
 	 	App.addInitializer(function(){
 
-	 		// Sample Collection
-	 		var mainCollection = new App.Collections.Items([
-	 			new App.Models.Item({ id: 1, name: 'Quique', email: 'quique@ckgrafico.com', twitter: 'CKGrafico'}),
-	 			new App.Models.Item({ id: 2, name: 'Jorge', email: 'jorge.casar@gmail.com', twitter: 'JorgeCasar'})
-	 		]);
-
-	 		// Sample View
-			var mainView = new App.Views.Main({
-				collection : mainCollection
-			});
+	 		// Main View
+			var mainView = new App.Views.Main();
 			App.main.show(mainView);
 
-			new App.Routers.Main();
-			Backbone.history.start();
 		});
 
 	 	App.start();

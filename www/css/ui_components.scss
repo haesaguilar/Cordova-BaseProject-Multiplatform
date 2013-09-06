@@ -24,7 +24,7 @@
     @include PropPrefix(box-shadow,"inset 0px 1px 1px "+darken($c_button,20%));
   }
 
-  &.icon{
+  &[class*='icon-']{
     padding: 0;
     &:before{
       float: left;
