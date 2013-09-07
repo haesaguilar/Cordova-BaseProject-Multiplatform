@@ -5,7 +5,7 @@ This is a project to make mobile apps for any platform in JavaScript, it's based
 
 ###Suported platforms
 
-- Blackberry
+- Blackberry 10
 - Windows Phone (comming soon *)
 - iOS 7 (comming soon *)
 - Android (comming soon *)
@@ -25,4 +25,4 @@ This is a project to make mobile apps for any platform in JavaScript, it's based
 
 ###Current status
 Writting components (menus, asides, etc..)
-Making styles for blackberry
+Making styles for BlackBerry 10
