@@ -2,3 +2,7 @@
 	path = www/css/base
 	url = https://github.com/CKGrafico/Cordova-BaseProject-Multiplatform-Styles.git
 	branch = master-packaged
+[submodule "merges/blackberry10/css/base"]
+	path = merges/blackberry10/css/base
+	url = https://github.com/CKGrafico/Cordova-BaseProject-Multiplatform-Styles.git
+	branch = Blackberry10-packaged
