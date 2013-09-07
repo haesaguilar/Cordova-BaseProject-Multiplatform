@@ -1,0 +1,4 @@
+[submodule "www/css/base"]
+	path = www/css/base
+	url = https://github.com/CKGrafico/Cordova-BaseProject-Multiplatform-Styles.git
+	branch = master-packaged

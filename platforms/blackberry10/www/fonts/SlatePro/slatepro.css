@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'SlateProMedium';
-    src: url('slatepro.eot');
-    src: url('slatepro.eot') format('embedded-opentype'),
-         url('slatepro.woff') format('woff'),
-         url('slatepro.ttf') format('truetype'),
-         url('slatepro.svg#SlateProMedium') format('svg');
-}
