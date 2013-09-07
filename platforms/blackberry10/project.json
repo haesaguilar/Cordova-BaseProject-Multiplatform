@@ -2,5 +2,5 @@
     "barName": "cordova-BB10-app",
     "defaultTarget": "",
     "targets": {},
-    "globalFetchDir": "C:\\Users\\Quique\\.cordova\\lib\\blackberry10\\cordova\\3.0.0\\plugins"
+    "globalFetchDir": "/Users/jdelcasar/.cordova/lib/blackberry10/cordova/3.0.0/plugins"
 }
