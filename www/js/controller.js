@@ -14,7 +14,7 @@ define(
 				this.changeView(new AuthorsView({ collection: authorsCollection }));
 			},
 			changeView: function(view, transition) {
-				App.main.show(view);
+				App.appLayout.content.show(view);
 			}
 		};
 	}
