@@ -7,6 +7,8 @@ require(
 
 		function start() {
 			console.log('Main.start:');
+			App.Router = router;
+			App.start();
 		}
 
 		function onDeviceReady(isDevice) {
