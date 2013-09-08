@@ -24,5 +24,8 @@ require.config({
       deps : ['underscore', 'jquery', 'backbone'],
       exports : 'Marionette'
     },
+    handlebars: {
+      exports: 'Handlebars'
+    }
   }
 });
