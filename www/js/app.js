@@ -22,6 +22,10 @@ define(
 
 		// Set up basic paths.
 		App.root = '/';
+		// Create regions
+		App.addRegions({
+			main: "#main"
+		});
 
 		App.initAppEvents = function() {
 			App.vent.on('navigate', function(e) {
